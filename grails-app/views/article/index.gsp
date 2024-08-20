@@ -21,6 +21,7 @@
                 <g:each in="${articleList}" var="articleItem">
                     <tr>
                     <td><g:link class="show" action="show" resource="${articleItem}">${articleItem.title}</g:link></td>
+                        <td><g:printCommentCount article="${articleItem}" /></td>
                     <g:form controller="article" resource="${articleItem}" method="POST">
                         <td><g:actionSubmit value="View" action="show"/></td>
                         <td><g:actionSubmit value="Edit" action="edit"/></td>
