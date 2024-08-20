@@ -10,5 +10,6 @@ class Comment {
 
     static constraints = {
         comment blank: false
+        article nullable: false
     }
 }
